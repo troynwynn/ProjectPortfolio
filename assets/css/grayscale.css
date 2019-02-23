@@ -169,7 +169,9 @@
 }
 
 .btn-primary {
-  background-color: #64a19d;
+  background-color: black;
+  /* background-color: #64a19d; */
+
 }
 
 .btn-primary:hover {
@@ -254,7 +256,7 @@
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid black;
 }
 
 .contact-section .card h4 {
@@ -265,7 +267,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: purple;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -298,7 +300,7 @@ body {
 }
 
 a {
-  color: #64a19d;
+  color: black;
 }
 
 a:focus, a:hover {
@@ -311,14 +313,14 @@ a:focus, a:hover {
 }
 
 .bg-primary {
-  background-color: #64a19d !important;
+  background-color: black !important;
 }
 
 .text-primary {
-  color: #64a19d !important;
+  color: black !important;
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 /*  */

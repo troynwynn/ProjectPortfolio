@@ -38,6 +38,38 @@
     background-color: black;
   }
 
+  /* Container needed to position the button. Adjust the width as needed */
+#pageRef {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image responsive */
+#pageRef img {
+  width: 100%;
+  /* height: auto; */
+}
+
+/* Style the button and place it in the middle of the container/image */
+#pageRef .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#pageRef .btn:hover {
+  background-color: black;
+}
+
   @media (max-width: 992px) {
 
   #introduction {
@@ -88,8 +120,8 @@
         <div id="introduction" class="col-lg-8 mx-auto p-4 mt-2-sm ">
             <span class="h5 text-white text-justify h-100 ">
               Hi, my name is <strong>Troy Wynn</strong>. I'm currently earning my certificate in <strong>Full Stack Web Development</strong> from The University of Pennsylvania, with an expected gradution in May 2019.
-              I graduated The University of Pennsylvania, Class of 2016, with a B.S.E. in <strong>Systems Engineering</strong>, with a focus in Finance & Economics. I look to use systems design and technical capability 
-              to provide unique perspectives to the innovative ideas of tomorrow.
+              I graduated The University of Pennsylvania, Class of 2016, with a B.S.E. in <strong>Systems Engineering</strong>, with a focus in Finance & Economics. I look to use systems design and my technical capabilities 
+              to help innovate the future.
             </span>
         </div>
         
@@ -105,7 +137,7 @@
   <section id="projects" class="projects-section bg-light">
     <div class="container">
 
-      <h2 class="text-black mb-4">Portfolio</h2>
+      <h2 class="text-black mb-4"><strong>Portfolio</strong></h2>
       <!-- Featured Project Row -->
       <!-- <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
@@ -120,9 +152,78 @@
       </div> -->
 
        <!-- Project Two Row -->
+       <div class="row justify-content-center no-gutters mb-4 mb-lg-5">
+          <div id="pageRef" class="col-lg-6">
+                <a href ="https://funky-funkos.herokuapp.com/"><img src="assets/img/funko_pop.jpg" class="img-fluid" alt="Responsive image"></a>
+                <button class="btn">Visit Page</button>
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+  
+                <div id="carouselExampleIndicators-funkyBots" class="myCarousel carousel slide h-100" data-ride="carousel" data-interval="0">
+                    <div class="d-flex h-100"> 
+                
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                    <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+                  </ol>
+                  
+                  
+                  
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item active ">
+                      <div class="project-text w-100 my-auto text-center text-md-left h-100">
+                        <h5 class="text-white">My Funko Pop: Marvel Avengers Edition</h5>
+                          <span id="readme-text" class="mb-0 text-white-50">This full-stack web application allows users to design their own Marvel Avengers Funko Pop. As a guest, a user is allowed to make as many drafts as they want,
+                            but can only take advantage of data storage by signing up with email verification. Once verified, users can take advantage of a personalized user settings in addition to a 
+                            "Match" feature that adds real Marvel Funko Pops to their "Trophy Room". Here, users are redirected to the purchase links to add to their Funko collection. </span>
+                            <br>
+                            <br>
+                          <span class="mb-0 text-white-50">
+                            Collaborators: 
+                            <a class="mb-0 text-white-50" href="https://github.com/ron881212"> <u>Ronald Glover</u></a>, 
+                            <a class="mb-0 text-white-50" href="https://github.com/monetthigpen"> <u>Monet Thigpen</u></a>, 
+                            <a class="mb-0 text-white-50" href="https://github.com/SamTaub"> <u>Sam Taub</u></a>  
+                          </span>                           
+                          <hr class="d-none d-lg-block mb-0 ml-0">
+                      </div>
+                    </div>
+                    <div class="carousel-item h-100 w-100">
+                        <div class="project-text w-100 my-auto mx-auto text-center text-md-left h-100">
+                            <h4 class="text-white">Built With:</h4>
+                              <span id="built-with-text" class="mb-0 text-white-50">
+                                <ul>
+                                  <li> Javascript </li>
+                                  <li> jQuery </li>
+                                  <li> Passport.js + Bcrypt </li>
+                                  <li> MySQL </li>
+                                  <li> Sequelize </li>
+                                </span>
+                                <hr class="d-none d-lg-block mb-0 ml-0">
+                                <br>
+                          </div>
+                    </div>
+                      <a class="carousel-control-prev" href="#carouselExampleIndicators-funkyBots" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleIndicators-funkyBots" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
     <div class="row justify-content-center no-gutters mb-4 mb-lg-5">
-        <div class="col-lg-6">
+        <div id="pageRef" class="col-lg-6">
               <a href ="https://exp-friend-finder-troy.herokuapp.com/"><img src="assets/img/friendfinder.jpg" class="img-fluid" alt="Responsive image"></a>
+              <button class="btn">Visit Page</button>
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
@@ -159,6 +260,7 @@
                                 <li> jQuery </li>
                                 <li> Node </li>
                                 <li> Express </li>
+                                <li> MySQL </li>
                               </ul>
                               </span>
                               <hr class="d-none d-lg-block mb-0 ml-0">
@@ -356,6 +458,67 @@
               </div>
             </div>
           </div>
+
+          <!-- STAR WARS RPG -->
+          <div class="row justify-content-center no-gutters mb-4 mb-lg-5">
+              <!-- <div class="col-lg-6"> -->
+                  <div id="pageRef" class="col-lg-6">
+                      <a href ="https://troynwynn.github.io/StarWarsRPG/"><img src="assets/img/star_wars.jpg" class="img-fluid" alt="Responsive image"></a>
+                  <button class="btn">Visit Page</button>
+
+                </div>
+                <!-- </div> -->
+              <div class="col-lg-6 order-lg-first">
+                <div class="bg-black text-center h-100 project">
+      
+                    <div id="carouselExampleIndicators-starWars" class="myCarousel carousel slide h-100" data-ride="carousel" data-interval="0">
+                        <div class="d-flex h-100"> 
+                    
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+                        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="3"></li> -->
+                      </ol>
+   
+                      <div class="carousel-inner h-100">
+                          <div class="carousel-item active">
+                            <div id="readme-text" class="project-text w-100 my-auto text-center text-md-left">
+                              <h4 class="text-white">Star Wars RPG</h4>
+                                <span id="readme-text" class="mb-0 text-white-50">Choose your character and prepare to survive some of Star Wars' most hated and beloved characters.</span>
+                                  <hr class="d-none d-lg-block mb-0 ml-0">
+                            </div>
+                          </div>
+                          <div class="carousel-item h-100 w-100">
+                            <div class="project-text w-100 my-auto mx-auto text-center text-md-left h-100">
+                                <h4 class="text-white">Built With:</h4>
+                                  <span id="built-with-text" class="mb-0 text-white-50">
+                                    <ul>
+                                      <li> HTML/CSS </li>
+                                      <li> Javascript </li>
+                                      <li> jQuery</li>
+                                    </ul>
+                                    </span>
+                                    <hr class="d-none d-lg-block mb-0 ml-0">
+                                    <br>
+                              </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators-starWars" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators-starWars" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+
     </div>
       
   </section>

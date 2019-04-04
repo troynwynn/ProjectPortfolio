@@ -198,6 +198,17 @@
   margin-bottom: 5rem;
 }
 
+/* CONTAINER */
+.container {
+    width: 1350px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1350px;
+  }
+}
+
 .projects-section {
   padding: 4rem 0;
 }
@@ -217,6 +228,8 @@
   padding: 3rem;
   font-size: 80%;
 }
+
+
 
 @media (min-width: 992px) {
   .projects-section .project-text {

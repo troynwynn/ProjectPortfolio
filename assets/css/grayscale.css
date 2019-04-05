@@ -199,15 +199,27 @@
 }
 
 /* CONTAINER */
-.container {
-    width: 1350px;
+/* .contentContainer {
+    width: 70%;
+}
+
+.contentBox {
+  width: 8100%;
 }
 
 @media (min-width: 1200px) {
-  .container {
-      max-width: 1350px;
+  .contentContainer {
+      max-width: 70%;
   }
 }
+
+@media (min-width: 800px) {
+  .contentContainer {
+      max-width: 100%;
+  }
+} */
+
+
 
 .projects-section {
   padding: 4rem 0;
@@ -231,6 +243,7 @@
 
 
 
+
 @media (min-width: 992px) {
   .projects-section .project-text {
     padding: 5rem;
@@ -240,6 +253,11 @@
     border-width: .25rem;
     width: 30%;
   }
+}
+
+#pageRef {
+  padding-top: 0;
+
 }
 
 .signup-section {
